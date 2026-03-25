@@ -16,7 +16,7 @@ void setup() {
   // SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally
   // 0x3C is the standard I2C address for 128x32 OLEDs
   if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
-    Serial.println(F("SSD1306 allocation failed"));
+    Serial.println(F("Failed to Load"));
     for(;;); // Don't proceed, loop forever
   }
 
@@ -24,7 +24,7 @@ void setup() {
   display.clearDisplay();
 
   // Set up text properties
-  display.setTextSize(16);
+  display.setTextSize(3);
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(0, 0);
   
