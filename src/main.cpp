@@ -24,11 +24,11 @@ void setup() {
   display.clearDisplay();
 
   // Set up text properties
-  display.setTextSize(3);
+  display.setTextSize(16);
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(0, 0);
   
-  display.println(F("SPWS"));
+  display.println(F("Hello World"));
 
   display.display();
 }
