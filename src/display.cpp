@@ -43,4 +43,6 @@ void loop() {
   Serial.print("Soil Moisture Value: ");
   Serial.println(soil_moisture_value);
   delay(1000); // Delay for a second before the next reading
+   Serial.println(analogRead(soil_moisture_pin));
+  delay(500);
 }
