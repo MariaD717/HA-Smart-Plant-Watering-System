@@ -27,7 +27,7 @@ void setup() {
   display.clearDisplay();
 
   // Set up text properties
-  display.setTextSize(3);
+  display.setTextSize(2);
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(0, 0);
   
@@ -47,6 +47,7 @@ void loop() {
     digitalWrite(RELAY_PIN, HIGH);
  }
   delay(1000);
+    display.print("Moisture: ");
   display.println(String(soil_moisture));
   delay(500);
   display.display();
