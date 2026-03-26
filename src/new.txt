@@ -1,0 +1,3 @@
+display.println(F("SPWS"));
+
+  display.display();
