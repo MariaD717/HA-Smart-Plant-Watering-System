@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 #define soil_moisture_pin 10
 
 void setup() {
