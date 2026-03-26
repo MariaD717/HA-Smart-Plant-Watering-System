@@ -7,7 +7,7 @@
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 32
 
-#define soil_moisture_pin 10
+#define soil_moisture_pin 36
 #define OLED_RESET -1
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
@@ -35,12 +35,19 @@ void setup() {
 }
 
 void loop() {
-  digitalWrite(RELAY_PIN, HIGH);
+  display.clearDisplay();
+  display.setCursor(0, 0);
+
+  int soil_moisture = analogRead(soil_moisture_pin);
+
+  if (soil_moisture > 4000){
+    digitalWrite(RELAY_PIN, LOW);
+  }
+ else {
+    digitalWrite(RELAY_PIN, HIGH);
+ }
   delay(1000);
-  digitalWrite(RELAY_PIN, LOW);
-  delay(1000);
-  int soil_moisture_value = analogRead(soil_moisture_pin);
-  Serial.print("Soil Moisture Value: ");
-  Serial.println(soil_moisture_value);
+  display.println(String(soil_moisture));
   delay(500);
+  display.display();
 }

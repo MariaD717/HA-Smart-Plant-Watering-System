@@ -7,6 +7,6 @@ void setup() {
 }
 
 void loop() {
-  Serial.printIn(analogRead(soil_moisture_pin));
+  Serial.println(analogRead(soil_moisture_pin));
   delay(500);
 }
