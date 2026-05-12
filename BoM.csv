@@ -1,0 +1,9 @@
+Name,Purpose,Quantity,Link
+Moisture Sensor,Finding the moisture of the plant soil,1,
+OLED display,Displaying the current moisture percentage,1,
+Esp32,Controlling the wifi and for controlling the functions of everyhting,1,
+Relay,For converting 12V to 7V so the Esp-32 doesn't get fried,1,
+DC motor,Carrying water from water tank to plant,1,
+Final prototype board,For neat soldering of everything,1,
+Buck Converter,Attaching PCB and 3d prints together,1,
+Flyback diode,Attaching PCB and 3d prints together,1,
