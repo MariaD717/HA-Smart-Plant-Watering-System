@@ -15,3 +15,7 @@
 
 ### A bunch of the hidden ones were placement holders for the components so that the box would be easier to make. The only folders we really used were "box" and "BACK WALL"
 
+# BoM
+
+### Click on the link to view my [Board Of Materials](https://github.com/MariaD717/HA-Smart-Plant-Watering-System/blob/main/BoM.csv).
+
